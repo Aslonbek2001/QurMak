@@ -1,0 +1,25 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Umumiy fon rangi */
+    color: #333; /* Matnning rangi */
+    font-size: 16px; /* Umumiy font o'lchami */
+    line-height: 1.5; /* Qatorlar orasidagi bo'shliq */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Yaxshi o'qiladigan font */
+}
+
+a {
+    text-decoration: none; /* Chiziqsiz linklar */
+    color: #007bff; /* Linkning rangi */
+    transition: color 0.3s ease; /* O'zgarish effektlari */
+}
+
+a:hover {
+    color: #0056b3; /* Hover holatidagi rang */
+}

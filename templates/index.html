@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Menu</h1>
+        <div class="row g-4">
+            <!-- Example Card -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="card text-center p-3">
+                        <div class="display-4 text-primary">
+                            <img class="img-fluid" width="100" src="{% static '/icons/exam.gif' %}" alt="Exam">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Imtixon</h5>
+                            <p class="card-text">Delicious grilled burger with fresh ingredients.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="card text-center p-3">
+                        <div class="display-4 text-primary"><img class="img-fluid" width="100" src="{% static "/icons/ticket.gif" %}"></img></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Biletlar</h5>
+                            <p class="card-text">Delicious grilled burger with fresh ingredients.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="card text-center p-3">
+                        <div class="display-4 text-primary"><img class="img-fluid" width="100" src="{% static "/icons/book.gif" %}"></img></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Book 1</h5>
+                            <p class="card-text">Delicious grilled burger with fresh ingredients.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="card text-center p-3">
+                        <div class="display-4 text-primary"><img class="img-fluid" width="100" src="{% static "/icons/book-recommendation.gif" %}"></img></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Book 2</h5>
+                            <p class="card-text">Delicious grilled burger with fresh ingredients.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="card text-center p-3">
+                        <div class="display-4 text-primary"><img class="img-fluid" width="100" src="{% static "/icons/dictionary.gif" %}"></img></div>
+                        <div class="card-body">
+                            <h5 class="card-title">So'zlar</h5>
+                            <p class="card-text">Delicious grilled burger with fresh ingredients.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- More cards can be added dynamically -->
+        </div>
+    </main>
+{% endblock %}
