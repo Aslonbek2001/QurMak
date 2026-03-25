@@ -15,8 +15,21 @@ DEBUG = os.getenv('DEBUG') == 'True'
 CORS_ALLOW_ALL_ORIGINS = True
 ALLOWED_HOSTS = ["qurmak.uz", "www.qurmak.uz", "94.241.139.146", "localhost", "127.0.0.1", "0.0.0.0"]
 
-CSRF_TRUSTED_ORIGINS = ["http://94.241.139.146", "https://qurmak.uz", "https://www.qurmak.uz", "http://localhost"]
-CORS_ALLOWED_ORIGINS = ["http://94.241.139.146", "https://qurmak.uz", "https://www.qurmak.uz", "http://localhost"]
+CSRF_TRUSTED_ORIGINS = [
+    "http://94.241.139.146",
+    "https://94.241.139.146",
+    "http://qurmak.uz",
+    "https://qurmak.uz",
+    "http://www.qurmak.uz",
+    "https://www.qurmak.uz",
+    "http://localhost",
+    "http://127.0.0.1",
+]
+CORS_ALLOWED_ORIGINS = [
+    "http://94.241.139.146", 
+    "https://qurmak.uz", 
+    "https://www.qurmak.uz", 
+    "http://localhost"]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SESSION_COOKIE_SECURE = True
