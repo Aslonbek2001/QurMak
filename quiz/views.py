@@ -10,8 +10,8 @@ import random
 
 ONE, TWO, THREE, FOUR, FIVE = 1, 2, 3, 4, 5
 limit_map = {
-            ONE: 100,
-            TWO: 60,
+            ONE: 40,
+            TWO: 40,
             THREE: 40,
             FOUR: 40,
             FIVE: 20,
