@@ -13,10 +13,15 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG') == 'True'
 
 CORS_ALLOW_ALL_ORIGINS = True
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["qurmak.uz", "www.qurmak.uz", "94.241.139.146", "localhost", "127.0.0.1", "0.0.0.0"]
 
-CSRF_TRUSTED_ORIGINS = ["http://195.133.73.139", "https://koreanquiz.uz"]  # "https://aslondev.uz"
-CORS_ALLOWED_ORIGINS = ["http://195.133.73.139", "https://koreanquiz.uz"] # https://aslondev.uz
+CSRF_TRUSTED_ORIGINS = ["http://94.241.139.146", "https://qurmak.uz", "https://www.qurmak.uz", "http://localhost"]
+CORS_ALLOWED_ORIGINS = ["http://94.241.139.146", "https://qurmak.uz", "https://www.qurmak.uz", "http://localhost"]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 
 # Application definition 
 
@@ -101,23 +106,23 @@ SPECTACULAR_SETTINGS = {
     'SERVE_INCLUDE_SCHEMA': True,
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.getenv('DB_NAME'),
-#         'USER': os.getenv('DB_USER'),
-#         'PASSWORD': os.getenv('DB_PASSWORD'),
-#         'HOST': os.getenv('DB_HOST'),
-#         'PORT': os.getenv('DB_PORT')
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3', # Uses the project's base directory
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT')
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3', # Uses the project's base directory
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
