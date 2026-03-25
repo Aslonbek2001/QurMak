@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'drf_spectacular',
-    'drf_spectacular_sidecar', 
+    # 'drf_spectacular_sidecar', 
     "rest_framework",
     "books.apps.BooksConfig",
     "rest_framework_simplejwt",
